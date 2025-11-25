@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
+
 import 'screens/home_screen.dart';
 import 'screens/kaiosa_screen.dart';
 import 'screens/about_screen.dart';
@@ -25,7 +25,7 @@ class KaiosaApp extends StatelessWidget {
           seedColor: const Color(0xFF27AE60),
           secondary: const Color(0xFFF39C12),
         ),
-        textTheme: GoogleFonts.segoeUiTextTheme(),
+        
         useMaterial3: true,
       ),
       home: const MainScreen(),
@@ -73,7 +73,7 @@ class _MainScreenState extends State<MainScreen> {
           children: [
             Text(
               'KAIOSA',
-              style: GoogleFonts.roboto(
+              style: TextStyle(
                 color: Colors.white,
                 fontSize: 28,
                 fontWeight: FontWeight.bold,
@@ -89,7 +89,7 @@ class _MainScreenState extends State<MainScreen> {
               ),
               child: Text(
                 'Innovation Concrète',
-                style: GoogleFonts.roboto(
+                style: TextStyle(
                   color: Colors.white,
                   fontSize: 12,
                   fontWeight: FontWeight.w600,
@@ -135,7 +135,7 @@ class _MainScreenState extends State<MainScreen> {
                       children: [
                         Text(
                           'KAIOSA',
-                          style: GoogleFonts.roboto(
+                          style: TextStyle(
                             color: Colors.white,
                             fontSize: 32,
                             fontWeight: FontWeight.bold,
@@ -144,7 +144,7 @@ class _MainScreenState extends State<MainScreen> {
                         const SizedBox(height: 8),
                         Text(
                           'Innovation Concrète',
-                          style: GoogleFonts.roboto(
+                          style: TextStyle(
                             color: const Color(0xFFF39C12),
                             fontSize: 16,
                           ),
