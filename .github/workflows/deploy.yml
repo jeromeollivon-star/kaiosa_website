@@ -31,6 +31,9 @@ jobs:
     - name: Add 404.html
       run: cp build/web/index.html build/web/404.html
     
+    - name: Remove README to avoid conflicts
+      run: rm -f build/web/README.md
+    
     - name: Deploy to GitHub Pages
       uses: peaceiris/actions-gh-pages@v3
       with:
