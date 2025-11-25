@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
+
 
 class ServicesScreen extends StatelessWidget {
   const ServicesScreen({super.key});
@@ -28,7 +28,7 @@ class ServicesScreen extends StatelessWidget {
         children: [
           Text(
             'Innovation Concrète à Votre Service',
-            style: GoogleFonts.roboto(
+            style: TextStyle(
               fontSize: 42,
               fontWeight: FontWeight.bold,
               color: const Color(0xFF1B8B2C),
@@ -40,7 +40,7 @@ class ServicesScreen extends StatelessWidget {
             constraints: const BoxConstraints(maxWidth: 800),
             child: Text(
               'KAIOSA vous accompagne dans toutes les étapes de votre projet d\'innovation, de l\'idée au prototype fonctionnel. Notre approche unique combine conseil stratégique et réalisation pratique pour des résultats tangibles et mesurables.',
-              style: GoogleFonts.roboto(fontSize: 18, color: Colors.black87),
+              style: TextStyle(fontSize: 18, color: Colors.black87),
               textAlign: TextAlign.center,
             ),
           ),
@@ -151,7 +151,7 @@ class ServicesScreen extends StatelessWidget {
                 const SizedBox(height: 16),
                 Text(
                   title,
-                  style: GoogleFonts.roboto(
+                  style: TextStyle(
                     fontSize: 24,
                     fontWeight: FontWeight.bold,
                     color: Colors.white,
@@ -161,7 +161,7 @@ class ServicesScreen extends StatelessWidget {
                 const SizedBox(height: 8),
                 Text(
                   price,
-                  style: GoogleFonts.roboto(
+                  style: TextStyle(
                     fontSize: 18,
                     color: Colors.white.withOpacity(0.9),
                   ),
@@ -176,7 +176,7 @@ class ServicesScreen extends StatelessWidget {
               children: [
                 Text(
                   description,
-                  style: GoogleFonts.roboto(fontSize: 14, color: Colors.black87),
+                  style: TextStyle(fontSize: 14, color: Colors.black87),
                 ),
                 const SizedBox(height: 20),
                 ...features.map((feature) => Padding(
@@ -193,7 +193,7 @@ class ServicesScreen extends StatelessWidget {
                           Expanded(
                             child: Text(
                               feature,
-                              style: GoogleFonts.roboto(
+                              style: TextStyle(
                                 fontSize: 13,
                                 color: Colors.black87,
                               ),
@@ -219,7 +219,7 @@ class ServicesScreen extends StatelessWidget {
                     ),
                     child: Text(
                       'En savoir plus',
-                      style: GoogleFonts.roboto(
+                      style: TextStyle(
                         fontSize: 14,
                         fontWeight: FontWeight.bold,
                       ),
@@ -242,7 +242,7 @@ class ServicesScreen extends StatelessWidget {
         children: [
           Text(
             'Notre Méthode de Travail',
-            style: GoogleFonts.roboto(
+            style: TextStyle(
               fontSize: 42,
               fontWeight: FontWeight.bold,
               color: const Color(0xFF1E8449),
@@ -288,7 +288,7 @@ class ServicesScreen extends StatelessWidget {
             child: Center(
               child: Text(
                 '$number',
-                style: GoogleFonts.roboto(
+                style: TextStyle(
                   fontSize: 24,
                   fontWeight: FontWeight.bold,
                   color: Colors.white,
@@ -310,7 +310,7 @@ class ServicesScreen extends StatelessWidget {
                 children: [
                   Text(
                     title,
-                    style: GoogleFonts.roboto(
+                    style: TextStyle(
                       fontSize: 20,
                       fontWeight: FontWeight.bold,
                       color: const Color(0xFF1E8449),
@@ -319,7 +319,7 @@ class ServicesScreen extends StatelessWidget {
                   const SizedBox(height: 8),
                   Text(
                     description,
-                    style: GoogleFonts.roboto(
+                    style: TextStyle(
                       fontSize: 14,
                       color: Colors.black87,
                     ),
@@ -341,7 +341,7 @@ class ServicesScreen extends StatelessWidget {
         children: [
           Text(
             'Ce Que Disent Nos Clients',
-            style: GoogleFonts.roboto(
+            style: TextStyle(
               fontSize: 42,
               fontWeight: FontWeight.bold,
               color: Colors.white,
@@ -385,7 +385,7 @@ class ServicesScreen extends StatelessWidget {
         children: [
           Text(
             text,
-            style: GoogleFonts.roboto(
+            style: TextStyle(
               fontSize: 16,
               fontStyle: FontStyle.italic,
               color: Colors.white,
@@ -394,7 +394,7 @@ class ServicesScreen extends StatelessWidget {
           const SizedBox(height: 16),
           Text(
             author,
-            style: GoogleFonts.roboto(
+            style: TextStyle(
               fontSize: 14,
               fontWeight: FontWeight.bold,
               color: const Color(0xFFF1C40F),
@@ -413,7 +413,7 @@ class ServicesScreen extends StatelessWidget {
         children: [
           Text(
             'Prêt à Concrétiser Votre Innovation ?',
-            style: GoogleFonts.roboto(
+            style: TextStyle(
               fontSize: 42,
               fontWeight: FontWeight.bold,
               color: const Color(0xFF1E8449),
@@ -423,7 +423,7 @@ class ServicesScreen extends StatelessWidget {
           const SizedBox(height: 20),
           Text(
             'Discutons de votre projet sans engagement. Premier échange gratuit pour définir ensemble la meilleure approche.',
-            style: GoogleFonts.roboto(fontSize: 18, color: Colors.black87),
+            style: TextStyle(fontSize: 18, color: Colors.black87),
             textAlign: TextAlign.center,
           ),
           const SizedBox(height: 30),
@@ -443,7 +443,7 @@ class ServicesScreen extends StatelessWidget {
             ),
             child: Text(
               'Contactez-nous maintenant',
-              style: GoogleFonts.roboto(
+              style: TextStyle(
                 fontSize: 18,
                 fontWeight: FontWeight.bold,
               ),
@@ -462,7 +462,7 @@ class ServicesScreen extends StatelessWidget {
         children: [
           Text(
             'KAIOSA - Conseil en Innovation',
-            style: GoogleFonts.roboto(
+            style: TextStyle(
               color: Colors.white,
               fontSize: 18,
               fontWeight: FontWeight.bold,
@@ -471,12 +471,12 @@ class ServicesScreen extends StatelessWidget {
           const SizedBox(height: 8),
           Text(
             '📍 Saint-Germain-en-Laye, Île-de-France',
-            style: GoogleFonts.roboto(color: Colors.white70, fontSize: 14),
+            style: TextStyle(color: Colors.white70, fontSize: 14),
           ),
           const SizedBox(height: 4),
           Text(
             '📧 contact@kaiosa.com',
-            style: GoogleFonts.roboto(
+            style: TextStyle(
               color: const Color(0xFFF1C40F),
               fontSize: 14,
             ),
@@ -484,7 +484,7 @@ class ServicesScreen extends StatelessWidget {
           const SizedBox(height: 16),
           Text(
             '© 2025 KAIOSA. Tous droits réservés.',
-            style: GoogleFonts.roboto(color: Colors.white70, fontSize: 12),
+            style: TextStyle(color: Colors.white70, fontSize: 12),
           ),
         ],
       ),

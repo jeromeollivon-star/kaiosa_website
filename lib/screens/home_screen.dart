@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
+
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -61,7 +61,7 @@ class HomeScreen extends StatelessWidget {
       children: [
         Text(
           'Ma Philosophie',
-          style: GoogleFonts.roboto(
+          style: TextStyle(
             fontSize: 42,
             fontWeight: FontWeight.bold,
             color: const Color(0xFF2C3E50),
@@ -70,18 +70,18 @@ class HomeScreen extends StatelessWidget {
         const SizedBox(height: 24),
         Text(
           'On me demande souvent ce que je fais comme travail. Je fais du conseil en innovation, ça veut tout dire et rien à la fois.',
-          style: GoogleFonts.roboto(fontSize: 18, color: Colors.black87),
+          style: TextStyle(fontSize: 18, color: Colors.black87),
         ),
         const SizedBox(height: 16),
         RichText(
           text: TextSpan(
-            style: GoogleFonts.roboto(fontSize: 18, color: Colors.black87),
+            style: TextStyle(fontSize: 18, color: Colors.black87),
             children: [
               const TextSpan(
                   text: 'Les grands cabinets qui font du conseil en innovation '),
               TextSpan(
                 text: 'pondent des PowerPoint',
-                style: GoogleFonts.roboto(
+                style: TextStyle(
                   backgroundColor: const Color(0xFFF39C12),
                   color: Colors.white,
                   fontWeight: FontWeight.bold,
@@ -90,7 +90,7 @@ class HomeScreen extends StatelessWidget {
               const TextSpan(text: '. Moi, j\'ai décidé de '),
               TextSpan(
                 text: 'pondre du concret',
-                style: GoogleFonts.roboto(
+                style: TextStyle(
                   backgroundColor: const Color(0xFFF39C12),
                   color: Colors.white,
                   fontWeight: FontWeight.bold,
@@ -103,12 +103,12 @@ class HomeScreen extends StatelessWidget {
         const SizedBox(height: 16),
         Text(
           'Le sujet de mon client devient mon crédo. C\'est pour cette raison que j\'ai décidé de travailler seul pour rester concentré uniquement sur mon sujet.',
-          style: GoogleFonts.roboto(fontSize: 18, color: Colors.black87),
+          style: TextStyle(fontSize: 18, color: Colors.black87),
         ),
         const SizedBox(height: 16),
         Text(
           'Dans la veine du low tech, ta solution tu trouveras !',
-          style: GoogleFonts.roboto(
+          style: TextStyle(
             fontSize: 18,
             color: Colors.black87,
             fontWeight: FontWeight.bold,
@@ -158,7 +158,7 @@ class HomeScreen extends StatelessWidget {
             const SizedBox(height: 20),
             Text(
               'CONCRET',
-              style: GoogleFonts.roboto(
+              style: TextStyle(
                 fontSize: 28,
                 fontWeight: FontWeight.bold,
                 color: Colors.white,
@@ -184,7 +184,7 @@ class HomeScreen extends StatelessWidget {
         children: [
           Text(
             'Ma Méthode',
-            style: GoogleFonts.roboto(
+            style: TextStyle(
               fontSize: 42,
               fontWeight: FontWeight.bold,
               color: const Color(0xFF2C3E50),
@@ -235,7 +235,7 @@ class HomeScreen extends StatelessWidget {
           const SizedBox(height: 16),
           Text(
             title,
-            style: GoogleFonts.roboto(
+            style: TextStyle(
               fontSize: 20,
               fontWeight: FontWeight.bold,
               color: const Color(0xFF2C3E50),
@@ -245,7 +245,7 @@ class HomeScreen extends StatelessWidget {
           const SizedBox(height: 12),
           Text(
             description,
-            style: GoogleFonts.roboto(fontSize: 14, color: Colors.black87),
+            style: TextStyle(fontSize: 14, color: Colors.black87),
             textAlign: TextAlign.center,
           ),
         ],
@@ -266,7 +266,7 @@ class HomeScreen extends StatelessWidget {
         children: [
           Text(
             'Nos Valeurs',
-            style: GoogleFonts.roboto(
+            style: TextStyle(
               fontSize: 42,
               fontWeight: FontWeight.bold,
               color: const Color(0xFF2C3E50),
@@ -310,7 +310,7 @@ class HomeScreen extends StatelessWidget {
         children: [
           Text(
             title,
-            style: GoogleFonts.roboto(
+            style: TextStyle(
               fontSize: 22,
               fontWeight: FontWeight.bold,
               color: const Color(0xFF3498DB),
@@ -319,7 +319,7 @@ class HomeScreen extends StatelessWidget {
           const SizedBox(height: 12),
           Text(
             description,
-            style: GoogleFonts.roboto(fontSize: 14, color: Colors.black87),
+            style: TextStyle(fontSize: 14, color: Colors.black87),
           ),
         ],
       ),
@@ -334,7 +334,7 @@ class HomeScreen extends StatelessWidget {
         children: [
           Text(
             'KAIOSA - Conseil en Innovation',
-            style: GoogleFonts.roboto(
+            style: TextStyle(
               color: Colors.white,
               fontSize: 18,
               fontWeight: FontWeight.bold,
@@ -343,12 +343,12 @@ class HomeScreen extends StatelessWidget {
           const SizedBox(height: 8),
           Text(
             '📍 Saint-Germain-en-Laye, Île-de-France',
-            style: GoogleFonts.roboto(color: Colors.white70, fontSize: 14),
+            style: TextStyle(color: Colors.white70, fontSize: 14),
           ),
           const SizedBox(height: 4),
           Text(
             '📧 contact@kaiosa.com',
-            style: GoogleFonts.roboto(
+            style: TextStyle(
               color: const Color(0xFF3498DB),
               fontSize: 14,
             ),
@@ -356,7 +356,7 @@ class HomeScreen extends StatelessWidget {
           const SizedBox(height: 16),
           Text(
             '© 2025 KAIOSA. Tous droits réservés.',
-            style: GoogleFonts.roboto(color: Colors.white70, fontSize: 12),
+            style: TextStyle(color: Colors.white70, fontSize: 12),
           ),
         ],
       ),

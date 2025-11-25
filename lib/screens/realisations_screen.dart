@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
+
 
 class RealisationsScreen extends StatelessWidget {
   const RealisationsScreen({super.key});
@@ -28,7 +28,7 @@ class RealisationsScreen extends StatelessWidget {
         children: [
           Text(
             'Nos Réalisations',
-            style: GoogleFonts.roboto(
+            style: TextStyle(
               fontSize: 42,
               fontWeight: FontWeight.bold,
               color: const Color(0xFF1E8449),
@@ -37,7 +37,7 @@ class RealisationsScreen extends StatelessWidget {
           const SizedBox(height: 10),
           Text(
             'Du concret, des résultats mesurables',
-            style: GoogleFonts.roboto(fontSize: 18, color: Colors.black87),
+            style: TextStyle(fontSize: 18, color: Colors.black87),
           ),
           const SizedBox(height: 40),
           Wrap(
@@ -64,7 +64,7 @@ class RealisationsScreen extends StatelessWidget {
         children: [
           Text(
             number,
-            style: GoogleFonts.roboto(
+            style: TextStyle(
               fontSize: 48,
               fontWeight: FontWeight.bold,
               color: const Color(0xFF27AE60),
@@ -73,7 +73,7 @@ class RealisationsScreen extends StatelessWidget {
           const SizedBox(height: 8),
           Text(
             label,
-            style: GoogleFonts.roboto(fontSize: 16, color: Colors.black87),
+            style: TextStyle(fontSize: 16, color: Colors.black87),
             textAlign: TextAlign.center,
           ),
         ],
@@ -94,7 +94,7 @@ class RealisationsScreen extends StatelessWidget {
         children: [
           Text(
             'Portfolio de Projets',
-            style: GoogleFonts.roboto(
+            style: TextStyle(
               fontSize: 42,
               fontWeight: FontWeight.bold,
               color: const Color(0xFF1E8449),
@@ -213,7 +213,7 @@ class RealisationsScreen extends StatelessWidget {
                   ),
                   child: Text(
                     category,
-                    style: GoogleFonts.roboto(
+                    style: TextStyle(
                       fontSize: 12,
                       fontWeight: FontWeight.bold,
                       color: const Color(0xFF2C3E50),
@@ -223,7 +223,7 @@ class RealisationsScreen extends StatelessWidget {
                 const SizedBox(height: 16),
                 Text(
                   title,
-                  style: GoogleFonts.roboto(
+                  style: TextStyle(
                     fontSize: 20,
                     fontWeight: FontWeight.bold,
                     color: const Color(0xFF1E8449),
@@ -232,7 +232,7 @@ class RealisationsScreen extends StatelessWidget {
                 const SizedBox(height: 12),
                 Text(
                   description,
-                  style: GoogleFonts.roboto(fontSize: 14, color: Colors.black87),
+                  style: TextStyle(fontSize: 14, color: Colors.black87),
                 ),
                 const SizedBox(height: 16),
                 Wrap(
@@ -248,7 +248,7 @@ class RealisationsScreen extends StatelessWidget {
                             ),
                             child: Text(
                               tag,
-                              style: GoogleFonts.roboto(
+                              style: TextStyle(
                                 fontSize: 11,
                                 color: Colors.black87,
                               ),
@@ -271,7 +271,7 @@ class RealisationsScreen extends StatelessWidget {
                     children: [
                       Text(
                         'Résultats',
-                        style: GoogleFonts.roboto(
+                        style: TextStyle(
                           fontSize: 14,
                           fontWeight: FontWeight.bold,
                           color: const Color(0xFF1E8449),
@@ -280,7 +280,7 @@ class RealisationsScreen extends StatelessWidget {
                       const SizedBox(height: 8),
                       Text(
                         results,
-                        style: GoogleFonts.roboto(
+                        style: TextStyle(
                           fontSize: 13,
                           color: Colors.black87,
                         ),
@@ -304,7 +304,7 @@ class RealisationsScreen extends StatelessWidget {
         children: [
           Text(
             'Notre Processus en Action',
-            style: GoogleFonts.roboto(
+            style: TextStyle(
               fontSize: 42,
               fontWeight: FontWeight.bold,
               color: const Color(0xFF1E8449),
@@ -348,7 +348,7 @@ class RealisationsScreen extends StatelessWidget {
           const SizedBox(height: 16),
           Text(
             title,
-            style: GoogleFonts.roboto(
+            style: TextStyle(
               fontSize: 20,
               fontWeight: FontWeight.bold,
               color: const Color(0xFF1E8449),
@@ -358,7 +358,7 @@ class RealisationsScreen extends StatelessWidget {
           const SizedBox(height: 12),
           Text(
             description,
-            style: GoogleFonts.roboto(fontSize: 14, color: Colors.black87),
+            style: TextStyle(fontSize: 14, color: Colors.black87),
             textAlign: TextAlign.center,
           ),
         ],
@@ -374,7 +374,7 @@ class RealisationsScreen extends StatelessWidget {
         children: [
           Text(
             'Témoignage Client',
-            style: GoogleFonts.roboto(
+            style: TextStyle(
               fontSize: 42,
               fontWeight: FontWeight.bold,
               color: Colors.white,
@@ -387,7 +387,7 @@ class RealisationsScreen extends StatelessWidget {
               children: [
                 Text(
                   '"Travailler avec KAIOSA a complètement changé notre vision de l\'innovation. Fini les réunions sans fin et les présentations théoriques. En 3 semaines, nous avions un prototype fonctionnel entre les mains. Cette approche concrète nous a permis d\'économiser 6 mois de développement et d\'éviter de nombreuses erreurs coûteuses."',
-                  style: GoogleFonts.roboto(
+                  style: TextStyle(
                     fontSize: 20,
                     fontStyle: FontStyle.italic,
                     color: Colors.white,
@@ -398,7 +398,7 @@ class RealisationsScreen extends StatelessWidget {
                 const SizedBox(height: 24),
                 Text(
                   'Marie Dubois - Directrice R&D, TechInnovate',
-                  style: GoogleFonts.roboto(
+                  style: TextStyle(
                     fontSize: 18,
                     fontWeight: FontWeight.bold,
                     color: const Color(0xFFF1C40F),
@@ -420,7 +420,7 @@ class RealisationsScreen extends StatelessWidget {
         children: [
           Text(
             'Votre Projet Mérite du Concret',
-            style: GoogleFonts.roboto(
+            style: TextStyle(
               fontSize: 42,
               fontWeight: FontWeight.bold,
               color: const Color(0xFF1E8449),
@@ -430,7 +430,7 @@ class RealisationsScreen extends StatelessWidget {
           const SizedBox(height: 20),
           Text(
             'Transformons ensemble vos idées en solutions tangibles et testées. Première consultation gratuite pour évaluer votre projet.',
-            style: GoogleFonts.roboto(fontSize: 18, color: Colors.black87),
+            style: TextStyle(fontSize: 18, color: Colors.black87),
             textAlign: TextAlign.center,
           ),
           const SizedBox(height: 30),
@@ -450,7 +450,7 @@ class RealisationsScreen extends StatelessWidget {
             ),
             child: Text(
               'Démarrons votre prototype',
-              style: GoogleFonts.roboto(
+              style: TextStyle(
                 fontSize: 18,
                 fontWeight: FontWeight.bold,
               ),
@@ -469,7 +469,7 @@ class RealisationsScreen extends StatelessWidget {
         children: [
           Text(
             'KAIOSA - Conseil en Innovation',
-            style: GoogleFonts.roboto(
+            style: TextStyle(
               color: Colors.white,
               fontSize: 18,
               fontWeight: FontWeight.bold,
@@ -478,12 +478,12 @@ class RealisationsScreen extends StatelessWidget {
           const SizedBox(height: 8),
           Text(
             '📍 Saint-Germain-en-Laye, Île-de-France',
-            style: GoogleFonts.roboto(color: Colors.white70, fontSize: 14),
+            style: TextStyle(color: Colors.white70, fontSize: 14),
           ),
           const SizedBox(height: 4),
           Text(
             '📧 contact@kaiosa.com',
-            style: GoogleFonts.roboto(
+            style: TextStyle(
               color: const Color(0xFFF1C40F),
               fontSize: 14,
             ),
@@ -491,7 +491,7 @@ class RealisationsScreen extends StatelessWidget {
           const SizedBox(height: 16),
           Text(
             '© 2025 KAIOSA. Tous droits réservés.',
-            style: GoogleFonts.roboto(color: Colors.white70, fontSize: 12),
+            style: TextStyle(color: Colors.white70, fontSize: 12),
           ),
         ],
       ),

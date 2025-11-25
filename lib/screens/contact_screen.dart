@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
+
 
 class ContactScreen extends StatelessWidget {
   const ContactScreen({super.key});
@@ -38,7 +38,7 @@ class ContactScreen extends StatelessWidget {
           const SizedBox(height: 24),
           Text(
             'Parlons de Votre Projet',
-            style: GoogleFonts.roboto(
+            style: TextStyle(
               fontSize: 48,
               fontWeight: FontWeight.bold,
               color: Colors.white,
@@ -50,7 +50,7 @@ class ContactScreen extends StatelessWidget {
             constraints: const BoxConstraints(maxWidth: 700),
             child: Text(
               'Vous avez une idée à concrétiser ? Un prototype à réaliser ? Contactez-nous pour un premier échange gratuit.',
-              style: GoogleFonts.roboto(
+              style: TextStyle(
                 fontSize: 20,
                 color: Colors.white.withOpacity(0.9),
               ),
@@ -126,7 +126,7 @@ class ContactScreen extends StatelessWidget {
           const SizedBox(height: 16),
           Text(
             title,
-            style: GoogleFonts.roboto(
+            style: TextStyle(
               fontSize: 20,
               fontWeight: FontWeight.bold,
               color: const Color(0xFF2C3E50),
@@ -135,7 +135,7 @@ class ContactScreen extends StatelessWidget {
           const SizedBox(height: 12),
           Text(
             content,
-            style: GoogleFonts.roboto(fontSize: 16, color: Colors.black87),
+            style: TextStyle(fontSize: 16, color: Colors.black87),
             textAlign: TextAlign.center,
           ),
         ],
@@ -156,7 +156,7 @@ class ContactScreen extends StatelessWidget {
         children: [
           Text(
             'Envoyez-nous un Message',
-            style: GoogleFonts.roboto(
+            style: TextStyle(
               fontSize: 42,
               fontWeight: FontWeight.bold,
               color: const Color(0xFF2C3E50),
@@ -214,7 +214,7 @@ class ContactScreen extends StatelessWidget {
                   ),
                   child: Text(
                     'Envoyer le message',
-                    style: GoogleFonts.roboto(
+                    style: TextStyle(
                       fontSize: 18,
                       fontWeight: FontWeight.bold,
                     ),
@@ -223,7 +223,7 @@ class ContactScreen extends StatelessWidget {
                 const SizedBox(height: 20),
                 Text(
                   '* Champs obligatoires',
-                  style: GoogleFonts.roboto(
+                  style: TextStyle(
                     fontSize: 12,
                     color: Colors.black54,
                     fontStyle: FontStyle.italic,
@@ -270,7 +270,7 @@ class ContactScreen extends StatelessWidget {
         children: [
           Text(
             'KAIOSA',
-            style: GoogleFonts.roboto(
+            style: TextStyle(
               color: Colors.white,
               fontSize: 32,
               fontWeight: FontWeight.bold,
@@ -280,7 +280,7 @@ class ContactScreen extends StatelessWidget {
           const SizedBox(height: 8),
           Text(
             'Conseil en Innovation Concrète',
-            style: GoogleFonts.roboto(
+            style: TextStyle(
               color: const Color(0xFFF39C12),
               fontSize: 16,
             ),
@@ -288,12 +288,12 @@ class ContactScreen extends StatelessWidget {
           const SizedBox(height: 24),
           Text(
             '📍 Saint-Germain-en-Laye, Île-de-France',
-            style: GoogleFonts.roboto(color: Colors.white70, fontSize: 14),
+            style: TextStyle(color: Colors.white70, fontSize: 14),
           ),
           const SizedBox(height: 4),
           Text(
             '📧 contact@kaiosa.com',
-            style: GoogleFonts.roboto(
+            style: TextStyle(
               color: const Color(0xFF3498DB),
               fontSize: 14,
             ),
@@ -303,7 +303,7 @@ class ContactScreen extends StatelessWidget {
           const SizedBox(height: 16),
           Text(
             '© 2025 KAIOSA. Tous droits réservés.',
-            style: GoogleFonts.roboto(color: Colors.white70, fontSize: 12),
+            style: TextStyle(color: Colors.white70, fontSize: 12),
           ),
         ],
       ),

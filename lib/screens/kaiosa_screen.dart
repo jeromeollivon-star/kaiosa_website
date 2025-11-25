@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
+
 
 class KaiosaScreen extends StatelessWidget {
   const KaiosaScreen({super.key});
@@ -72,7 +72,7 @@ class KaiosaScreen extends StatelessWidget {
           const SizedBox(height: 20),
           Text(
             'KAIO-SAMA',
-            style: GoogleFonts.roboto(
+            style: TextStyle(
               fontSize: 32,
               fontWeight: FontWeight.bold,
               color: Colors.white,
@@ -81,7 +81,7 @@ class KaiosaScreen extends StatelessWidget {
           const SizedBox(height: 8),
           Text(
             'Roi des Kaïos',
-            style: GoogleFonts.roboto(
+            style: TextStyle(
               fontSize: 20,
               color: Colors.white.withOpacity(0.9),
             ),
@@ -97,7 +97,7 @@ class KaiosaScreen extends StatelessWidget {
       children: [
         Text(
           'La Révélation',
-          style: GoogleFonts.roboto(
+          style: TextStyle(
             fontSize: 42,
             fontWeight: FontWeight.bold,
             color: const Color(0xFF27AE60),
@@ -106,12 +106,12 @@ class KaiosaScreen extends StatelessWidget {
         const SizedBox(height: 24),
         RichText(
           text: TextSpan(
-            style: GoogleFonts.roboto(fontSize: 18, color: Colors.black87),
+            style: TextStyle(fontSize: 18, color: Colors.black87),
             children: [
               const TextSpan(text: 'KAIOSA tire son nom de '),
               TextSpan(
                 text: 'Kaio-sama',
-                style: GoogleFonts.roboto(
+                style: TextStyle(
                   backgroundColor: const Color(0xFF27AE60),
                   color: Colors.white,
                   fontWeight: FontWeight.bold,
@@ -126,12 +126,12 @@ class KaiosaScreen extends StatelessWidget {
         const SizedBox(height: 16),
         Text(
           'Contrairement aux autres maîtres qui se contentent de théorie, Kaio-sama transforme ses élèves en les soumettant à des conditions extrêmes sur sa petite planète où la gravité est décuplée.',
-          style: GoogleFonts.roboto(fontSize: 18, color: Colors.black87),
+          style: TextStyle(fontSize: 18, color: Colors.black87),
         ),
         const SizedBox(height: 16),
         Text(
           'De la même manière, nous transformons vos idées en les soumettant aux tests les plus rigoureux pour créer des innovations véritablement robustes.',
-          style: GoogleFonts.roboto(fontSize: 18, color: Colors.black87),
+          style: TextStyle(fontSize: 18, color: Colors.black87),
         ),
       ],
     );
@@ -151,7 +151,7 @@ class KaiosaScreen extends StatelessWidget {
         children: [
           Text(
             'La Philosophie Commune',
-            style: GoogleFonts.roboto(
+            style: TextStyle(
               fontSize: 42,
               fontWeight: FontWeight.bold,
               color: Colors.white,
@@ -163,7 +163,7 @@ class KaiosaScreen extends StatelessWidget {
             constraints: const BoxConstraints(maxWidth: 900),
             child: Text(
               '"Il ne suffit pas d\'avoir une idée brillante ou une force brute. Ce qui compte, c\'est la capacité à transformer cette matière première en quelque chose d\'opérationnel, de résistant, qui fonctionne vraiment quand ça compte."',
-              style: GoogleFonts.roboto(
+              style: TextStyle(
                 fontSize: 24,
                 fontStyle: FontStyle.italic,
                 color: Colors.white,
@@ -175,7 +175,7 @@ class KaiosaScreen extends StatelessWidget {
           const SizedBox(height: 20),
           Text(
             'La philosophie KAIOSA, inspirée de Kaio-sama',
-            style: GoogleFonts.roboto(
+            style: TextStyle(
               fontSize: 20,
               color: const Color(0xFFF39C12),
               fontWeight: FontWeight.bold,
@@ -199,7 +199,7 @@ class KaiosaScreen extends StatelessWidget {
         children: [
           Text(
             'Les Parallèles Frappants',
-            style: GoogleFonts.roboto(
+            style: TextStyle(
               fontSize: 42,
               fontWeight: FontWeight.bold,
               color: const Color(0xFF2C3E50),
@@ -273,7 +273,7 @@ class KaiosaScreen extends StatelessWidget {
         children: [
           Text(
             title,
-            style: GoogleFonts.roboto(
+            style: TextStyle(
               fontSize: 22,
               fontWeight: FontWeight.bold,
               color: const Color(0xFF27AE60),
@@ -298,7 +298,7 @@ class KaiosaScreen extends StatelessWidget {
                     children: [
                       Text(
                         leftTitle,
-                        style: GoogleFonts.roboto(
+                        style: TextStyle(
                           fontWeight: FontWeight.bold,
                           color: Colors.black87,
                         ),
@@ -306,7 +306,7 @@ class KaiosaScreen extends StatelessWidget {
                       const SizedBox(height: 8),
                       Text(
                         leftDesc,
-                        style: GoogleFonts.roboto(
+                        style: TextStyle(
                           fontSize: 13,
                           color: Colors.black87,
                         ),
@@ -331,7 +331,7 @@ class KaiosaScreen extends StatelessWidget {
                     children: [
                       Text(
                         rightTitle,
-                        style: GoogleFonts.roboto(
+                        style: TextStyle(
                           fontWeight: FontWeight.bold,
                           color: Colors.black87,
                         ),
@@ -339,7 +339,7 @@ class KaiosaScreen extends StatelessWidget {
                       const SizedBox(height: 8),
                       Text(
                         rightDesc,
-                        style: GoogleFonts.roboto(
+                        style: TextStyle(
                           fontSize: 13,
                           color: Colors.black87,
                         ),
@@ -363,7 +363,7 @@ class KaiosaScreen extends StatelessWidget {
         children: [
           Text(
             'KAIOSA - Conseil en Innovation',
-            style: GoogleFonts.roboto(
+            style: TextStyle(
               color: Colors.white,
               fontSize: 18,
               fontWeight: FontWeight.bold,
@@ -372,12 +372,12 @@ class KaiosaScreen extends StatelessWidget {
           const SizedBox(height: 8),
           Text(
             '📍 Saint-Germain-en-Laye, Île-de-France',
-            style: GoogleFonts.roboto(color: Colors.white70, fontSize: 14),
+            style: TextStyle(color: Colors.white70, fontSize: 14),
           ),
           const SizedBox(height: 4),
           Text(
             '📧 contact@kaiosa.com',
-            style: GoogleFonts.roboto(
+            style: TextStyle(
               color: const Color(0xFF3498DB),
               fontSize: 14,
             ),
@@ -385,7 +385,7 @@ class KaiosaScreen extends StatelessWidget {
           const SizedBox(height: 16),
           Text(
             '© 2025 KAIOSA. Tous droits réservés.',
-            style: GoogleFonts.roboto(color: Colors.white70, fontSize: 12),
+            style: TextStyle(color: Colors.white70, fontSize: 12),
           ),
         ],
       ),

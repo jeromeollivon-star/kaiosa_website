@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
+
 
 class AboutScreen extends StatelessWidget {
   const AboutScreen({super.key});
@@ -83,7 +83,7 @@ class AboutScreen extends StatelessWidget {
       children: [
         Text(
           'Jérôme Ollivon',
-          style: GoogleFonts.roboto(
+          style: TextStyle(
             fontSize: 42,
             fontWeight: FontWeight.bold,
             color: const Color(0xFF2C3E50),
@@ -92,13 +92,13 @@ class AboutScreen extends StatelessWidget {
         const SizedBox(height: 24),
         RichText(
           text: TextSpan(
-            style: GoogleFonts.roboto(fontSize: 18, color: Colors.black87),
+            style: TextStyle(fontSize: 18, color: Colors.black87),
             children: [
               const TextSpan(
                   text: 'Fondateur de KAIOSA depuis 2021, je suis '),
               TextSpan(
                 text: 'consultant en innovation',
-                style: GoogleFonts.roboto(
+                style: TextStyle(
                   backgroundColor: const Color(0xFFF39C12),
                   color: Colors.white,
                   fontWeight: FontWeight.bold,
@@ -113,19 +113,19 @@ class AboutScreen extends StatelessWidget {
         const SizedBox(height: 16),
         Text(
           'Ma mission ? Transformer vos idées en solutions concrètes et fonctionnelles, sans PowerPoint inutiles, mais avec de vrais prototypes, de vrais tests, et de vraies innovations qui marchent.',
-          style: GoogleFonts.roboto(fontSize: 18, color: Colors.black87),
+          style: TextStyle(fontSize: 18, color: Colors.black87),
         ),
         const SizedBox(height: 16),
         RichText(
           text: TextSpan(
-            style: GoogleFonts.roboto(fontSize: 18, color: Colors.black87),
+            style: TextStyle(fontSize: 18, color: Colors.black87),
             children: [
               const TextSpan(
                   text:
                       'Basé à Saint-Germain-en-Laye, j\'accompagne les entreprises, collectivités et organismes qui veulent innover autrement, avec une approche '),
               TextSpan(
                 text: 'low-tech et pragmatique',
-                style: GoogleFonts.roboto(
+                style: TextStyle(
                   backgroundColor: const Color(0xFFF39C12),
                   color: Colors.white,
                   fontWeight: FontWeight.bold,
@@ -152,7 +152,7 @@ class AboutScreen extends StatelessWidget {
         children: [
           Text(
             'Domaines d\'Expertise',
-            style: GoogleFonts.roboto(
+            style: TextStyle(
               fontSize: 42,
               fontWeight: FontWeight.bold,
               color: const Color(0xFF2C3E50),
@@ -230,7 +230,7 @@ class AboutScreen extends StatelessWidget {
           const SizedBox(height: 16),
           Text(
             title,
-            style: GoogleFonts.roboto(
+            style: TextStyle(
               fontSize: 22,
               fontWeight: FontWeight.bold,
               color: const Color(0xFF3498DB),
@@ -251,7 +251,7 @@ class AboutScreen extends StatelessWidget {
                     Expanded(
                       child: Text(
                         item,
-                        style: GoogleFonts.roboto(
+                        style: TextStyle(
                           fontSize: 14,
                           color: Colors.black87,
                         ),
@@ -273,7 +273,7 @@ class AboutScreen extends StatelessWidget {
         children: [
           Text(
             'Mon Approche Unique',
-            style: GoogleFonts.roboto(
+            style: TextStyle(
               fontSize: 42,
               fontWeight: FontWeight.bold,
               color: const Color(0xFF2C3E50),
@@ -295,7 +295,7 @@ class AboutScreen extends StatelessWidget {
               children: [
                 Text(
                   '🗃️ Du Concret, Pas du PowerPoint',
-                  style: GoogleFonts.roboto(
+                  style: TextStyle(
                     fontSize: 20,
                     fontWeight: FontWeight.bold,
                     color: const Color(0xFF2C3E50),
@@ -304,12 +304,12 @@ class AboutScreen extends StatelessWidget {
                 const SizedBox(height: 12),
                 Text(
                   'Contrairement aux grands cabinets qui produisent des présentations, je crée des prototypes fonctionnels. Chaque innovation est testée, maltraitée, améliorée jusqu\'à ce qu\'elle fonctionne parfaitement.',
-                  style: GoogleFonts.roboto(fontSize: 16, color: Colors.black87),
+                  style: TextStyle(fontSize: 16, color: Colors.black87),
                 ),
                 const SizedBox(height: 24),
                 Text(
                   '🎯 Focus Total sur Votre Projet',
-                  style: GoogleFonts.roboto(
+                  style: TextStyle(
                     fontSize: 20,
                     fontWeight: FontWeight.bold,
                     color: const Color(0xFF2C3E50),
@@ -318,12 +318,12 @@ class AboutScreen extends StatelessWidget {
                 const SizedBox(height: 12),
                 Text(
                   'Le sujet de mon client devient mon crédo. Je travaille seul pour rester concentré uniquement sur votre problématique, sans perturbations mercantiles ou managériales.',
-                  style: GoogleFonts.roboto(fontSize: 16, color: Colors.black87),
+                  style: TextStyle(fontSize: 16, color: Colors.black87),
                 ),
                 const SizedBox(height: 24),
                 Text(
                   '🔄 Méthode Itérative',
-                  style: GoogleFonts.roboto(
+                  style: TextStyle(
                     fontSize: 20,
                     fontWeight: FontWeight.bold,
                     color: const Color(0xFF2C3E50),
@@ -332,7 +332,7 @@ class AboutScreen extends StatelessWidget {
                 const SizedBox(height: 12),
                 Text(
                   'Je procède par cycles courts : idée → dessin → prototype → test → amélioration. Si ça ne marche pas, je sais pourquoi et je recommence mieux.',
-                  style: GoogleFonts.roboto(fontSize: 16, color: Colors.black87),
+                  style: TextStyle(fontSize: 16, color: Colors.black87),
                 ),
               ],
             ),
@@ -350,7 +350,7 @@ class AboutScreen extends StatelessWidget {
             ),
             child: Text(
               '"Mon métier, c\'est d\'innover, de faire que ce qui ne doit pas fonctionner finisse par fonctionner. Et tout cela sans monter une usine à gaz, mais en le faisant le plus simplement possible."',
-              style: GoogleFonts.roboto(
+              style: TextStyle(
                 fontSize: 20,
                 fontStyle: FontStyle.italic,
                 color: const Color(0xFF2C3E50),
@@ -371,7 +371,7 @@ class AboutScreen extends StatelessWidget {
         children: [
           Text(
             'Ce Qui Nous Différencie',
-            style: GoogleFonts.roboto(
+            style: TextStyle(
               fontSize: 42,
               fontWeight: FontWeight.bold,
               color: Colors.white,
@@ -409,7 +409,7 @@ class AboutScreen extends StatelessWidget {
           const SizedBox(height: 16),
           Text(
             title,
-            style: GoogleFonts.roboto(
+            style: TextStyle(
               fontSize: 22,
               fontWeight: FontWeight.bold,
               color: const Color(0xFFF39C12),
@@ -419,7 +419,7 @@ class AboutScreen extends StatelessWidget {
           const SizedBox(height: 12),
           Text(
             description,
-            style: GoogleFonts.roboto(fontSize: 14, color: Colors.white),
+            style: TextStyle(fontSize: 14, color: Colors.white),
             textAlign: TextAlign.center,
           ),
         ],
@@ -435,7 +435,7 @@ class AboutScreen extends StatelessWidget {
         children: [
           Text(
             'KAIOSA - Conseil en Innovation',
-            style: GoogleFonts.roboto(
+            style: TextStyle(
               color: Colors.white,
               fontSize: 18,
               fontWeight: FontWeight.bold,
@@ -444,12 +444,12 @@ class AboutScreen extends StatelessWidget {
           const SizedBox(height: 8),
           Text(
             '📍 Saint-Germain-en-Laye, Île-de-France',
-            style: GoogleFonts.roboto(color: Colors.white70, fontSize: 14),
+            style: TextStyle(color: Colors.white70, fontSize: 14),
           ),
           const SizedBox(height: 4),
           Text(
             '📧 contact@kaiosa.com',
-            style: GoogleFonts.roboto(
+            style: TextStyle(
               color: const Color(0xFF3498DB),
               fontSize: 14,
             ),
@@ -457,7 +457,7 @@ class AboutScreen extends StatelessWidget {
           const SizedBox(height: 16),
           Text(
             '© 2025 KAIOSA. Tous droits réservés.',
-            style: GoogleFonts.roboto(color: Colors.white70, fontSize: 12),
+            style: TextStyle(color: Colors.white70, fontSize: 12),
           ),
         ],
       ),
