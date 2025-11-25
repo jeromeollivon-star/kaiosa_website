@@ -5,31 +5,5 @@
   "display": "standalone",
   "background_color": "#ffffff",
   "theme_color": "#27AE60",
-  "description": "KAIOSA - Conseil en Innovation Concrète. Prototypage rapide et solutions pragmatiques.",
-  "orientation": "portrait-primary",
-  "prefer_related_applications": false,
-  "icons": [
-    {
-      "src": "icons/Icon-192.png",
-      "sizes": "192x192",
-      "type": "image/png"
-    },
-    {
-      "src": "icons/Icon-512.png",
-      "sizes": "512x512",
-      "type": "image/png"
-    },
-    {
-      "src": "icons/Icon-maskable-192.png",
-      "sizes": "192x192",
-      "type": "image/png",
-      "purpose": "maskable"
-    },
-    {
-      "src": "icons/Icon-maskable-512.png",
-      "sizes": "512x512",
-      "type": "image/png",
-      "purpose": "maskable"
-    }
-  ]
+  "description": "KAIOSA - Conseil en Innovation Concrète"
 }
