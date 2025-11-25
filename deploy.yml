@@ -3,7 +3,10 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches:
-      - main  # Ou 'master' selon ton nom de branche
+      - main
+
+permissions:
+  contents: write
 
 jobs:
   build-and-deploy:
@@ -11,7 +14,7 @@ jobs:
     
     steps:
     - name: Checkout repository
-      uses: actions/checkout@v3
+      uses: actions/checkout@v4
     
     - name: Setup Flutter
       uses: subosito/flutter-action@v2
@@ -19,24 +22,18 @@ jobs:
         flutter-version: '3.24.0'
         channel: 'stable'
     
-    - name: Install dependencies
+    - name: Get dependencies
       run: flutter pub get
     
     - name: Build web
-      run: flutter build web --release --web-renderer canvaskit --base-href "/kaiosa_website/"
+      run: flutter build web --release --base-href "/kaiosa_website/"
     
-    - name: Fix 404 handling
+    - name: Add 404.html
       run: cp build/web/index.html build/web/404.html
-    
-    - name: Fix script loading
-      run: |
-        cd build/web
-        # Add call to loadMainDartJs
-        sed -i 's|<script src="flutter.js" defer></script>|<script src="flutter.js" defer onload="loadMainDartJs()"></script>|g' index.html
-        sed -i 's|<script src="flutter.js" defer></script>|<script src="flutter.js" defer onload="loadMainDartJs()"></script>|g' 404.html
     
     - name: Deploy to GitHub Pages
       uses: peaceiris/actions-gh-pages@v3
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         publish_dir: ./build/web
+        cname: false
