@@ -1,9 +1,9 @@
 {
-  "name": "KAIOSA - Conseil en Innovation",
+  "name": "KAIOSA - Conseil en Innovation Concrète",
   "short_name": "KAIOSA",
-  "start_url": "/kaiosa_website/",
+  "start_url": "/",
   "display": "standalone",
   "background_color": "#ffffff",
   "theme_color": "#27AE60",
-  "description": "KAIOSA - Conseil en Innovation Concrète"
+  "description": "Conseil en innovation, prototypage rapide, validation technique. Du concret, pas du PowerPoint."
 }
