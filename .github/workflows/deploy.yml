@@ -26,17 +26,61 @@ jobs:
       run: flutter pub get
     
     - name: Build web
-      run: flutter build web --release --base-href "/kaiosa_website/"
-    
+      run: flutter build web --release --base-href "/"
+
     - name: Add 404.html
       run: cp build/web/index.html build/web/404.html
-    
+
+    - name: Add custom index.html with SEO meta tags
+      run: |
+        cat > build/web/index.html << 'HTMLEOF'
+        <!DOCTYPE html>
+        <html>
+        <head>
+          <base href="/">
+          <meta charset="UTF-8">
+          <meta content="IE=Edge" http-equiv="X-UA-Compatible">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title>KAIOSA - Conseil en Innovation Concrète | Prototypage Rapide & Validation Technique</title>
+          <meta name="description" content="KAIOSA accompagne les inventeurs et entreprises dans la validation technique de leurs projets. Prototypage rapide, proof-of-concept, études de faisabilité. Formation IA en entreprise.">
+          <meta name="keywords" content="KAIOSA, conseil innovation, prototypage rapide, validation technique, formation IA, formation intelligence artificielle, Saint-Germain-en-Laye, Jérôme Ollivon">
+          <meta name="author" content="KAIOSA - Jérôme Ollivon">
+          <meta name="robots" content="index, follow">
+          <link rel="canonical" href="https://www.kaiosa.fr/">
+          <meta property="og:type" content="website">
+          <meta property="og:url" content="https://www.kaiosa.fr/">
+          <meta property="og:title" content="KAIOSA - Conseil en Innovation Concrète & Formation IA">
+          <meta property="og:description" content="Du concret, pas du PowerPoint. Formation IA en entreprise, prototypage rapide et validation technique.">
+          <meta property="og:site_name" content="KAIOSA">
+          <title>KAIOSA</title>
+          <link rel="manifest" href="manifest.json">
+        </head>
+        <body>
+          <script src="flutter.js" defer></script>
+          <script>
+            window.addEventListener('load', function(ev) {
+              _flutter.loader.loadEntrypoint({
+                onEntrypointLoaded: function(engineInitializer) {
+                  engineInitializer.initializeEngine().then(function(appRunner) {
+                    appRunner.runApp();
+                  });
+                }
+              });
+            });
+          </script>
+        </body>
+        </html>
+        HTMLEOF
+
+    - name: Add 404.html for SPA routing
+      run: cp build/web/index.html build/web/404.html
+
     - name: Remove README to avoid conflicts
       run: rm -f build/web/README.md
-    
+
     - name: Deploy to GitHub Pages
       uses: peaceiris/actions-gh-pages@v3
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         publish_dir: ./build/web
-        cname: false
+        cname: kaiosa.fr
