@@ -2,13 +2,17 @@ import 'package:flutter/material.dart';
 
 
 class HomeScreen extends StatelessWidget {
-  const HomeScreen({super.key});
+  const HomeScreen({super.key, this.onNavigateToFormation});
+
+  final VoidCallback? onNavigateToFormation;
 
   @override
   Widget build(BuildContext context) {
     return SingleChildScrollView(
       child: Column(
         children: [
+          // Bannière Formation IA
+          _buildFormationBanner(context),
           // Section Philosophie
           _buildPhilosophySection(context),
           // Section Méthode
@@ -17,6 +21,85 @@ class HomeScreen extends StatelessWidget {
           _buildValuesSection(context),
           // Footer
           _buildFooter(context),
+        ],
+      ),
+    );
+  }
+
+  Widget _buildFormationBanner(BuildContext context) {
+    final isMobile = MediaQuery.of(context).size.width < 800;
+
+    return Container(
+      width: double.infinity,
+      padding: EdgeInsets.symmetric(
+        vertical: isMobile ? 30 : 40,
+        horizontal: isMobile ? 20 : 60,
+      ),
+      decoration: const BoxDecoration(
+        gradient: LinearGradient(
+          colors: [Color(0xFF2C3E50), Color(0xFF27AE60)],
+          begin: Alignment.centerLeft,
+          end: Alignment.centerRight,
+        ),
+      ),
+      child: Column(
+        children: [
+          Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Container(
+                padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 4),
+                decoration: BoxDecoration(
+                  color: const Color(0xFFF39C12),
+                  borderRadius: BorderRadius.circular(4),
+                ),
+                child: const Text(
+                  'NOUVEAU',
+                  style: TextStyle(
+                    color: Colors.white,
+                    fontSize: 12,
+                    fontWeight: FontWeight.bold,
+                    letterSpacing: 1,
+                  ),
+                ),
+              ),
+              const SizedBox(width: 12),
+              Text(
+                'Formation IA en entreprise',
+                style: TextStyle(
+                  fontSize: isMobile ? 20 : 26,
+                  fontWeight: FontWeight.bold,
+                  color: Colors.white,
+                ),
+              ),
+            ],
+          ),
+          const SizedBox(height: 12),
+          Text(
+            '1 journée pour apprendre à faire fonctionner l\'IA selon VOTRE manière de penser.',
+            style: TextStyle(
+              fontSize: isMobile ? 14 : 16,
+              color: Colors.white.withOpacity(0.9),
+            ),
+            textAlign: TextAlign.center,
+          ),
+          const SizedBox(height: 16),
+          ElevatedButton(
+            onPressed: onNavigateToFormation,
+            style: ElevatedButton.styleFrom(
+              backgroundColor: const Color(0xFFF1C40F),
+              foregroundColor: const Color(0xFF2C3E50),
+              padding: const EdgeInsets.symmetric(horizontal: 28, vertical: 14),
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(50),
+              ),
+              elevation: 4,
+            ),
+            child: const Text(
+              'Découvrir',
+              style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
+            ),
+          ),
         ],
       ),
     );

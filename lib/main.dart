@@ -5,6 +5,7 @@ import 'screens/kaiosa_screen.dart';
 import 'screens/about_screen.dart';
 import 'screens/services_screen.dart';
 import 'screens/realisations_screen.dart';
+import 'screens/formation_ia_screen.dart';
 import 'screens/contact_screen.dart';
 
 void main() {
@@ -43,12 +44,13 @@ class MainScreen extends StatefulWidget {
 class _MainScreenState extends State<MainScreen> {
   int _selectedIndex = 0;
 
-  final List<Widget> _screens = [
-    const HomeScreen(),
+  List<Widget> get _screens => [
+    HomeScreen(onNavigateToFormation: () => setState(() => _selectedIndex = 5)),
     const KaiosaScreen(),
     const AboutScreen(),
     const ServicesScreen(),
     const RealisationsScreen(),
+    const FormationIAScreen(),
     const ContactScreen(),
   ];
 
@@ -58,6 +60,7 @@ class _MainScreenState extends State<MainScreen> {
     'À propos',
     'Services',
     'Réalisations',
+    'Formation IA',
     'Contact',
   ];
 
@@ -201,6 +204,8 @@ class _MainScreenState extends State<MainScreen> {
       case 4:
         return Icons.work;
       case 5:
+        return Icons.school;
+      case 6:
         return Icons.contact_mail;
       default:
         return Icons.circle;
