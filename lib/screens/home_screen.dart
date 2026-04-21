@@ -31,73 +31,96 @@ class HomeScreen extends StatelessWidget {
 
     return Container(
       width: double.infinity,
-      padding: EdgeInsets.symmetric(
-        vertical: isMobile ? 30 : 40,
-        horizontal: isMobile ? 20 : 60,
-      ),
-      decoration: const BoxDecoration(
-        gradient: LinearGradient(
-          colors: [Color(0xFF2C3E50), Color(0xFF27AE60)],
-          begin: Alignment.centerLeft,
-          end: Alignment.centerRight,
-        ),
-      ),
-      child: Column(
+      height: isMobile ? 400 : 500,
+      child: Stack(
+        fit: StackFit.expand,
         children: [
-          Row(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              Container(
-                padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 4),
-                decoration: BoxDecoration(
-                  color: const Color(0xFFF39C12),
-                  borderRadius: BorderRadius.circular(4),
-                ),
-                child: const Text(
-                  'NOUVEAU',
-                  style: TextStyle(
-                    color: Colors.white,
-                    fontSize: 12,
-                    fontWeight: FontWeight.bold,
-                    letterSpacing: 1,
+          // Background image
+          Image.asset(
+            'assets/formation-hero.jpg',
+            fit: BoxFit.cover,
+          ),
+          // Dark overlay
+          Container(
+            decoration: BoxDecoration(
+              gradient: LinearGradient(
+                colors: [
+                  Colors.black.withOpacity(0.7),
+                  Colors.black.withOpacity(0.4),
+                  Colors.black.withOpacity(0.7),
+                ],
+                begin: Alignment.topCenter,
+                end: Alignment.bottomCenter,
+              ),
+            ),
+          ),
+          // Content
+          Padding(
+            padding: EdgeInsets.symmetric(
+              horizontal: isMobile ? 20 : 60,
+              vertical: isMobile ? 40 : 60,
+            ),
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Container(
+                  padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 6),
+                  decoration: BoxDecoration(
+                    color: const Color(0xFFF39C12),
+                    borderRadius: BorderRadius.circular(4),
+                  ),
+                  child: const Text(
+                    'NOUVEAU',
+                    style: TextStyle(
+                      color: Colors.white,
+                      fontSize: 13,
+                      fontWeight: FontWeight.bold,
+                      letterSpacing: 2,
+                    ),
                   ),
                 ),
-              ),
-              const SizedBox(width: 12),
-              Text(
-                'Formation IA en entreprise',
-                style: TextStyle(
-                  fontSize: isMobile ? 20 : 26,
-                  fontWeight: FontWeight.bold,
-                  color: Colors.white,
+                const SizedBox(height: 20),
+                Text(
+                  'Formation IA en Entreprise',
+                  style: TextStyle(
+                    fontSize: isMobile ? 28 : 42,
+                    fontWeight: FontWeight.bold,
+                    color: Colors.white,
+                    letterSpacing: 1,
+                  ),
+                  textAlign: TextAlign.center,
                 ),
-              ),
-            ],
-          ),
-          const SizedBox(height: 12),
-          Text(
-            '1 journée pour apprendre à faire fonctionner l\'IA selon VOTRE manière de penser.',
-            style: TextStyle(
-              fontSize: isMobile ? 14 : 16,
-              color: Colors.white.withOpacity(0.9),
-            ),
-            textAlign: TextAlign.center,
-          ),
-          const SizedBox(height: 16),
-          ElevatedButton(
-            onPressed: onNavigateToFormation,
-            style: ElevatedButton.styleFrom(
-              backgroundColor: const Color(0xFFF1C40F),
-              foregroundColor: const Color(0xFF2C3E50),
-              padding: const EdgeInsets.symmetric(horizontal: 28, vertical: 14),
-              shape: RoundedRectangleBorder(
-                borderRadius: BorderRadius.circular(50),
-              ),
-              elevation: 4,
-            ),
-            child: const Text(
-              'Découvrir',
-              style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
+                const SizedBox(height: 16),
+                Container(
+                  constraints: const BoxConstraints(maxWidth: 600),
+                  child: Text(
+                    '1 journée pour apprendre à faire fonctionner l\'IA selon VOTRE manière de penser.\nPas de slides. Du code. Du concret.',
+                    style: TextStyle(
+                      fontSize: isMobile ? 15 : 18,
+                      color: Colors.white.withOpacity(0.95),
+                      height: 1.5,
+                    ),
+                    textAlign: TextAlign.center,
+                  ),
+                ),
+                const SizedBox(height: 28),
+                ElevatedButton(
+                  onPressed: onNavigateToFormation,
+                  style: ElevatedButton.styleFrom(
+                    backgroundColor: const Color(0xFFF1C40F),
+                    foregroundColor: const Color(0xFF2C3E50),
+                    padding: const EdgeInsets.symmetric(horizontal: 36, vertical: 18),
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(50),
+                    ),
+                    elevation: 6,
+                  ),
+                  child: const Text(
+                    'Découvrir la formation',
+                    style: TextStyle(fontSize: 17, fontWeight: FontWeight.bold),
+                  ),
+                ),
+              ],
             ),
           ),
         ],
